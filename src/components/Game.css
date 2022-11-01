@@ -1,0 +1,63 @@
+.logoImage {
+    padding-top: 20px;
+    height: 250px;
+    width: 400px;
+}
+.square {
+    border: 1px solid gray;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.score {
+    width: 50%;
+}
+.game {
+    width: 50%;
+    margin: 25vh 5vw;
+    position: relative;
+}
+.board {
+    --grid-size: 4;
+    display: grid;
+    width: 15rem;
+    height: 15rem;
+    background-color: #1282CC;
+    grid-template: repeat(var(--grid-size), 1fr) / repeat(var(--grid-size), 1fr);
+}
+
+.parentBoard {
+    display: flex;
+    flex-direction: row;
+}
+
+.color1 {
+    background-color: #CC123C ;
+}
+.color2 {
+    background-color: #A5CC12;
+}
+.color3 {
+    background-color: #34CC12 ;
+}
+.color4 {
+    background-color: #CC12B6;
+}
+.white {
+    background-color: white;
+}
+p {
+    font-weight: 500;
+    font-size: larger;
+}
+button {
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 6px 12px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
